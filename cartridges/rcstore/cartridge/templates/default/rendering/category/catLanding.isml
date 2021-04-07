@@ -1,0 +1,21 @@
+<isdecorate template="common/layout/page">
+
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets');
+        assets.addCss('/css/search.css');
+    </isscript>
+
+    <isslot id="cat-landing-slotbanner-m" context="category" description="Banner at the top of Category Landing Pages" context-object="${pdict.category}"
+    />
+
+    <div class="container">
+        <div class="secondary-content">
+            <isslot id="cat-landing-slotbottom-m" context="category" description="Slot to display the categories from the parent category" context-object="${pdict.category}"/>
+            <isslot id="cat-landing-banner2" context="category" description="This is the second banner on the parent category page" context-object="${pdict.category}"/>
+            <isslot id="cat-landing-slotbottom2-m" context="category" description="Choose products from the women categories and subcategories" context-object="${pdict.category}"/>
+        </div>
+    </div>
+    
+    
+
+</isdecorate>

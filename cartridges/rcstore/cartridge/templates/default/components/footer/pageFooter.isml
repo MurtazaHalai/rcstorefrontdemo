@@ -1,0 +1,26 @@
+<footer id="footercontent">
+    <div class="container-fluid">
+        <div class=" footer-container row">
+       
+      
+            <div class="footer-item col-sm-12 col-lg-2 collapsible-xs footer-space-black" >
+                <iscontentasset aid="footer-locate-store" />
+            </div>
+            
+             <div class="footer-item col-sm-12 col-lg-2 collapsible-xs footer-space-black">
+                <iscontentasset aid="footer-account" />
+            </div>
+            
+             <div class="footer-item col-sm-12 col-lg-2 collapsible-xs footer-space-black">
+                <iscontentasset aid="footer-support" />
+                
+               
+                 <div class="rclogo-reverse"><img class="hidden-md-down" src="${URLUtils.staticURL('/images/logo-reverse.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" /></div>
+            </div>
+          
+           
+           
+             <div class="footer-item col-sm-12 col-lg-6 collapsible-xs footer-space-white">
+                 <iscontentasset aid="footer-copy" />
+            </div>
+            

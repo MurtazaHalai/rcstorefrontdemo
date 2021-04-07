@@ -1,0 +1,6 @@
+<isif condition="${product.shortDescription}">
+    <div class="col-sm-12 col-md-8 col-lg-12 value content single-product-content-quickview quickview-content" id="collapsible-description-${loopState && loopState.count ? loopState.count : '1'}" style="font-size:16px;font-family:Arial">
+        <isprint value="${product.shortDescription}" encoding="off" />
+    </div>
+</isif>
+

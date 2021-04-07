@@ -1,0 +1,10 @@
+<div class="image-container image-hover"> 
+   <a href="${pdict.urls.product}">
+        <img class="tile-image"
+             src="${product.images.medium[0].url}"
+             alt="${product.productName}"
+             title="${product.images.medium[0].title}"
+             />
+    </a>
+
+</div>

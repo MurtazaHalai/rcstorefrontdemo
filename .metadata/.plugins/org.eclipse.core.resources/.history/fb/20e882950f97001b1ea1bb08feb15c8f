@@ -1,0 +1,43 @@
+<div class="product-tile image-container" id="checkimage">
+    <!-- dwMarker="product" dwContentID="${product.uuid}" -->
+    <isinclude template="product/components/productTileImage" />
+    <div class="tile-body">
+    <div class="pdp-link">
+    <a class="link" href="${pdict.urls.product}">${product.productName}</a>
+</div><br>
+  <isset name="price" value="${product.price}" scope="page" />
+        <isif condition="${product.productType === 'set'}">
+            <isinclude template="product/components/pricing/setPrice" />
+        <iselse>
+            <isinclude template="product/components/pricing/main" />
+        </isif></p>
+        <isif condition="${pdict.display.swatches !== false}">
+            <isinclude template="product/components/productTileSwatch" />
+        </isif><br>
+
+        <isinclude template="product/components/productTileName" />
+
+      
+
+       <div class="ratings"><isif condition="${pdict.display.ratings !== false}">
+            <isinclude template="product/productTileFooter" />
+        </isif>
+      <isif condition="${pdict.display.showQuickView !== false}">
+        <a class="quickview hidden-sm-down" href="${pdict.urls.quickView}"
+           data-toggle="modal"
+           data-target="#quickViewModal"
+           title="${Resource.msgf('button.quickview', 'common', null, product.productName)}"
+           aria-label="${Resource.msgf('button.quickview', 'common', null, product.productName)}"
+        >
+       <button class="btn btn-primary quickview_btn" style="margin:0 auto;margin-top:10px;margin-bottom:10px">QUICK VIEW</button>
+        </a>
+    </isif>
+     <div class="pdp-link" style="font-size:12px;font-weight:200 !important">
+    <a class="link" href="${pdict.urls.product}"><span style="font-weight: normal;
+    font-family: Arial">View Product Details</span></a>
+</div>
+    </div></div>
+  
+    <!-- END_dwmarker -->
+</div>
+   
